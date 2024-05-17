@@ -14,15 +14,15 @@ public class Student {
 
     @Id
     @Column
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     // check if UUID is creating id in code, and AUTO creates in table
-    public UUID id;
+    public int student_id;
     @Column
     public String firstName;
     @Column
     public String lastName;
     @Column
     public Date dateOfBirth;
-    @Column
-    public Map<Subject,Grade> gradesList;
+//    @Column
+//    public Map<Subject,Grade> gradesList;
 }
